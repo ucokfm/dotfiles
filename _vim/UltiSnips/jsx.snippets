@@ -1,0 +1,15 @@
+snippet react
+import React, { PropTypes } from 'react';
+
+const propTypes = {
+	children: PropTypes.node,
+};
+
+export default function ${1:CompName}({ children }) {
+	return (
+		<div>{children}</div>
+	);
+}
+
+$1.propTypes = propTypes;
+endsnippet
